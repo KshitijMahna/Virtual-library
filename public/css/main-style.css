@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+body{
+    background: url("main-lib-blur.jpg") no-repeat fixed center center;
+    font-family: sans-serif;
+}
+
+.main-heading{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.main-heading.appear{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.container{
+    display: flex;
+}
+
+.user-container{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+}
+
+.publisher-container{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+}
+
+.btn-main{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    background-color: rgb(231, 217, 18);
+    color: brown;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    transform: scale(1);
+    opacity: 0;
+    transform: translateY(70%);
+}
+
+.btn-main.appear:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 100ms ease-in;
+}
+
+.btn-main.appear{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.main-title-readers, .main-title-publishers{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2rem;
+    transform: translateY(40%);
+    opacity: 0;
+}
+
+.main-title-readers.appear, .main-title-publishers.appear{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 500ms ease-in, opacity 500ms ease-in;
+}
+
+.main-title-readers{
+    top: 34%;
+    left: 40%;
+}
+
+.main-title-publishers{
+    top: 34%;
+    left: 37%;
+}
+
+
+
+
+
